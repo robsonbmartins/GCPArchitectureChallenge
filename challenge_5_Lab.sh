@@ -50,8 +50,8 @@ gcloud container clusters create echo-cluster
 gcloud container clusters get-credentials echo-cluster
 
 # Create the deploy for the cluster
-# kubectl run [DEPLOY_NAME] --image=[IMAGE] --port=8080
-kubectl run echo-app --image=gcr.io/$ID/echo-app:v1 --port=8080
+# kubectl run [DEPLOY_NAME] --image=[IMAGE] --port=8000
+kubectl run echo-app --image=gcr.io/$ID/echo-app:v1 --port=8000
 
 # Check if deploy is ready
 kubectl get pods
